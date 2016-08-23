@@ -1,0 +1,689 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face{
+   font-family:nintendo;
+   font-style: normal;
+   font-weight: normal;
+   src:url(../Font/nintenderwip.otf)
+}
+
+*{
+	margin:0px;
+	padding:0px;
+}
+
+html,body{
+	width:100%;
+	height:100%;
+	background-color:#CFCFCF;
+}
+
+#contenedor{
+	max-width:1440px;
+	margin:auto;
+	height:auto;
+	overflow:hidden;
+}
+
+header{
+	background-image:url(../IMG/web/Logo.png);
+	background-repeat:no-repeat;
+	background-position:30px center;
+	background-size:250px;
+	height:122px;
+}
+
+header, #contenido{
+	margin:0 10%;
+	background-color:#FFFFFF;
+}
+
+#contenido{
+	height:100%;
+}
+
+#menuNavegador{
+	font-family:nintendo, san-serif;
+	margin:5% 0 0 0;
+	float:right;
+	width:53%;
+}
+
+#menuNavegador li{
+	list-style:none;
+	display:inline-block;
+	margin:0 12px;
+}
+
+#menuNavegador a{
+	text-decoration:none;
+}
+			
+#menuNavegador a{
+	color:#000;
+}
+
+#menuNavegador a:hover{
+	border-bottom:solid 3px #FF0004;
+}
+
+#buscador{
+	height:83px;
+}
+
+#buscador input{
+	background-image:url(../IMG/web/Buscador.png);
+    background-repeat: no-repeat;
+    background-position: 95% 23%;
+    background-size: 14%;
+    border-radius: 5px;
+    padding: 8px;
+    float: right;
+    margin: 2%;
+}
+
+#buscador label{
+	display:none;
+}
+
+#juegos, #consolas, #accesorios{
+	margin: 4% 0;
+}
+
+#juegosTitulo{
+	background-image:url(../IMG/web/Juegos.png);
+	background-repeat:no-repeat;
+	background-size:100%;
+	font-family:nintendo, san-serif;
+	height:89px;
+	width:40%;
+	color:#fff;
+}
+
+#consolasTitulo{
+	background-image:url(../IMG/web/Consolas.png);
+	background-repeat:no-repeat;
+	background-size:100%;
+	font-family:nintendo, san-serif;
+	height:89px;
+	width:40%;
+	color:#fff;
+}
+
+#accesoriosTitulo{
+	background-image:url(../IMG/web/Accesorios.png);
+	background-repeat:no-repeat;
+	background-size:100%;
+	font-family:nintendo, san-serif;
+	height:89px;
+	width:40%;
+	color:#fff;
+}
+
+#contactosTitulo{
+	background-image:url(../IMG/web/contactos.png);
+	background-repeat:no-repeat;
+	background-size:100%;
+	font-family:nintendo, san-serif;
+	height:89px;
+	width:40%;
+	color:#fff;
+}
+
+#formularioTitulo{
+	background-image:url(../IMG/web/CompraF.png);
+	background-repeat:no-repeat;
+	background-size:100%;
+	font-family:nintendo, san-serif;
+	height:89px;
+	width:40%;
+	color:#fff;
+}
+
+#juegosTitulo h2, #consolasTitulo h2, #accesoriosTitulo h2, #contactosTitulo h2{
+	font-size:200%;
+	padding:5% 0 5% 5%;
+}
+
+#formularioTitulo h2{
+	font-size:120%;
+	padding:5% 0 5% 5%;
+}
+
+.viewport, #juegosProducto, #consolasProducto, #accesoriosProducto{
+	width:94%;
+	margin:0 auto 34px;
+	text-align:center;
+	flex-wrap:wrap;
+	flex-direction:row-reverse;
+	justify-content:center;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+}
+
+
+.viewport {
+  position: relative;
+  width: 100%;
+  height: 340px;  /* you can define the height you want */
+  overflow: hidden;
+}
+
+.overview li {
+	list-style:none;
+	display:inline-table;
+}
+
+#juegosProducto li, #consolasProducto li, #accesoriosProducto li{
+    display: inline-table;
+    width: 17%;
+    padding: 10px 5px;
+}
+
+.buttons {
+  display: block;
+  position: absolute;
+  height:100%;
+  width: 60px;
+  top: 0;
+  text-align: center;
+  z-index: 1;
+  background-color:rgba(225,225,225,0.77);
+  color:#000000;
+  border: 0;
+  font-family: 'fontawesome';
+}
+
+.buttons i {
+  font-size: 18px;
+  color: #000;
+  line-height: 150px;
+}
+
+.buttons:hover {
+  background-color:rgba(203,203,203,0.77);
+  color:#FFFFFF;
+}
+
+.overview {
+  position: absolute;
+  margin: 0;
+  left: 0;
+  top: 0;
+  width:100% !important;
+}
+
+.buttons.prev {
+  left: 0;     /* if you're using 'x' axis */
+}
+.buttons.next {
+  right: 0;    /* if you're using 'x' axis */
+}
+
+.overview ul {
+  clear: both;
+  list-style: none;
+  height: 150px;
+  padding: 0;
+  line-height: 0;
+}
+
+h3{
+    margin: 25px 8px 0 8px;
+    font-size: 100%;
+    font-weight: normal;
+	height:43px;
+}
+
+.precio{
+    margin: 0 8px;
+    font-weight: bold;
+	font-size:18px;
+	}
+
+.precioProducto{
+    margin: 15px 8px;
+    font-weight: bold;
+	font-size:30px;
+	font-family:nintendo;
+	}
+
+.nombre{
+	font-family:nintendo;
+	color:#FFFFFF;
+	background-color:#1556C9;
+	padding:10px 20px;
+	
+}
+
+button{
+	display:inline-table;
+}
+
+.comprar{
+	background-color:#70a83b;
+	background-image:url(../IMG/web/Comprar.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:30px;
+    width: 85px;
+    height: 40px;
+    border: none;
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+    margin-top: 10px;
+}
+
+
+.agregar{
+	background-color:#0066ad;
+	background-image:url(../IMG/web/Agregar.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:25px;
+    width: 85px;
+    height: 40px;
+    border: none;
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+    margin-top: 10px;
+}
+
+
+.prod{
+	width:170px;
+	height:252px;
+	margin:43px 8px 0 8px;
+	list-style:none;
+	display:inline-block;
+	text-align:center;
+	}
+
+footer{
+	text-align:center;
+	height:180px;
+	background-image:url(../IMG/web/Fondo_Footer.jpg);
+	background-repeat:no-repeat;
+	
+}
+
+footer ul{
+    padding: 3% 0;
+}
+
+footer li{
+	display:inline-table;
+	margin: 8px 56px;
+}
+
+footer img{
+	width:81%;
+}
+
+ #juegosCompra{
+	 width:100%;
+	 text-align:center;
+	 margin:25px 0;
+ }
+ 
+ #juegosCompra img{
+	 display:inline-block;
+ }
+ 
+ #info{
+	 display:inline-block;
+	 width:48%;
+	 text-align:left;
+	 margin-left:15px;
+ }
+ 
+ #info h2{
+	 margin-bottom:25px;
+ }
+ 
+ #comprarProducto{
+	 width:100%;
+	 border-radius:10px;
+ }
+ 
+ #formulario1, #formulario{
+    padding-left: 9%;
+	width:42%;
+	display:inline-block;
+ }
+
+ 
+ #formulario1 li, #formulario li{
+	 list-style:none;
+	 margin: 8px 0;
+ }
+ 
+ #formulario1 label, #formulario label{
+	display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#formulario1 input, #formulario input{
+	border: 1px solid #EEE;
+    outline-color: #00BFF0;
+    width: 96%;
+    font-size: 1em;
+    padding: 0.5em;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#imgContactos {
+    display: inline-block;
+    height: 100%;
+    margin-left: 11.4%;
+}
+
+#contactosProducto {
+    width: 100%;
+}
+
+
+
+.subFormulario{
+	font-weight:bold;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#txtMensaje{
+	width:350px;
+	height:191px;
+}
+
+.botonSubmit {
+    margin: 20px 0;
+    background-color: #55AA10;
+    color: #FFF;
+    height: 50px;
+	width:100% !important;
+}
+
+#tarjeta {
+    margin: 50px 0;
+    background-color:#E4E4E4;
+}
+
+#tarjetasTipo {
+    width: 50%;
+    margin: auto;
+}
+
+#tarjeta h3 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.listaFormulario{
+	 padding: 0 20px 30px;
+}
+.precioProducto{
+    margin: 0 8px;
+    font-weight: bold;
+	font-size:25px;
+	font-family:nintendo;
+}
+#cofre{
+	width:41%;
+	display:inline-block;
+	float:right;
+	height:100%;
+}
+
+
+@media screen and (max-width:768px)
+{
+	
+#imgContactos {
+	display:none;
+}
+#formularioTitulo h2{
+	font-size:120%;
+	padding:5% 0 5% 5%;
+}
+
+#juegosProducto li, #consolasProducto li, #accesoriosProducto li{
+    display: inline-table;
+    width: 40%;
+    padding: 10px 5px;
+}
+
+#formulario1, #formulario{
+	padding:0 10px;
+	width:97%;
+}
+	
+#cofre{
+	display:none;
+}
+	
+#formularioTitulo{
+	width:70%;
+}
+.precioProducto{
+    margin: 0 8px;
+    font-weight: bold;
+	font-size:25px;
+	font-family:nintendo;
+	}
+header{
+	background-image:url(../IMG/web/Logo.png);
+	background-repeat:no-repeat;
+	background-position:center 20px;
+	background-size:160px;
+	height:auto;
+}	
+	
+ #juegosCompra{
+	 width:100%;
+ }
+ 
+ #juegosCompra img{
+	 display:block;
+	 margin:auto;
+	 width:60%;
+ }
+ 
+ #info{
+	 font-size:100%;
+	 display:block;
+	 width:90%;
+	 margin:20px auto;
+	 text-align:center;
+	  }
+#menuNavegador{
+	font-family:nintendo, san-serif;
+	text-align:center;
+	padding-top:70px;
+	padding-bottom:20px;
+	float:none;
+	display:block;
+	width:100%;
+}
+
+#menuNavegador li{
+	list-style:none;
+	display:inline-block;
+	margin:0 12px;
+}
+
+#juegosTitulo{
+	width:60%;
+}
+
+
+
+#consolasTitulo{
+	width:60%;
+}
+
+#accesoriosTitulo{
+	width:60%;
+}
+
+#contactosTitulo{
+	width:60%;
+}
+
+}
+
+@media screen and (max-width:375px)
+{
+
+
+
+#dropMenu{
+	width: 30px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 58px 0 5px 0;
+}
+
+#formulario1 input, #formulario input{
+    border: 1px solid #EEE;
+    outline-color: #00BFF0;
+    width: 96%;
+    font-size: 1em;
+    padding: 2% 0;
+    margin-left: 2%;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#formularioTitulo {
+    width: 100%;
+    height: 50px;
+}
+
+#formularioTitulo h2, #contactosTitulo h2 {
+    font-size: 85%;
+    padding: 5% 0 5% 5%;
+}
+	
+#formulario1, #formulario {
+    padding: 0;
+    width: 100%;
+}
+
+.listaFormulario {
+    padding: 0;
+}
+
+.botonSubmit {
+    background-color: #55AA10;
+    color: #FFF;
+    height: 50px;
+    width: 100% !important;
+    margin: 20px 0 !important;
+}
+
+header{
+	background-image:url(../IMG/web/Logo.png);
+	background-repeat:no-repeat;
+	background-position:center 20px;
+	background-size:160px;
+	height:auto;
+}	
+	
+ #juegosCompra{
+	 width:100%;
+ }
+ 
+ #juegosCompra img{
+	 display:block;
+	 margin:auto;
+	 width:60%;
+ }
+ 
+ #info{
+	 font-size:60%;
+	 display:block;
+	 width:90%;
+	 margin:15px auto;
+	 text-align:center;
+	  }
+#menuNavegador{
+	font-family:nintendo, san-serif;
+	text-align:center;
+	padding-top:0;
+	float:none;
+	display:block;
+	width:100%;
+}
+
+#menuNavegador ul{
+	height:auto;
+}
+
+#menuNavegador li{
+	list-style:none;
+	display:block;
+	font-size:80%;
+	padding:5px 0;
+}
+
+#buscador{
+	text-align:center;
+	height:20%;
+}
+
+#slider2{
+	display:none;
+}
+
+#buscador input{
+	background-image:url(../IMG/web/Buscador.png);
+    background-repeat: no-repeat;
+    background-position: 95% 23%;
+    background-size: 10%;
+    border-radius: 5px;
+    padding: 2px;
+    float: none;
+    margin: 2%;
+}
+
+#formularioTitulo{
+	width:100%;
+}
+
+#juegosTitulo{
+	width:100%;
+}
+
+#consolasTitulo{
+	width:100%;
+}
+
+#accesoriosTitulo{
+	width:100%;
+}
+
+#contactosTitulo{
+	width:100%;
+}
+
+footer{
+	text-align:center;
+	height:130px;
+	background-image:url(../IMG/web/Fondo_Footer.jpg);
+	background-repeat:no-repeat;
+	
+}
+
+footer ul{
+    padding: 3% 0;
+}
+
+footer li{
+	display:block;
+	margin: 8px 56px;
+}
+
+footer img{
+	width:30%;
+}
+
+}

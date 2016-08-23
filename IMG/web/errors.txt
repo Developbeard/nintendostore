@@ -1,0 +1,8 @@
+[Tue Apr 19 2016 20:24:43 GMT-0500 (Hora est. Pacífico, Sudamérica)] layer "Slider01.jpg": Duplicate path: Slider01.jpg
+[Tue Apr 19 2016 20:24:43 GMT-0500 (Hora est. Pacífico, Sudamérica)] layer "Slider02.jpg": Duplicate path: Slider02.jpg
+[Tue Apr 19 2016 20:24:43 GMT-0500 (Hora est. Pacífico, Sudamérica)] layer "Slider03.jpg": Duplicate path: Slider03.jpg
+[Tue Apr 19 2016 20:24:43 GMT-0500 (Hora est. Pacífico, Sudamérica)] layer "Slider04.jpg": Duplicate path: Slider04.jpg
+[Tue Apr 19 2016 20:24:43 GMT-0500 (Hora est. Pacífico, Sudamérica)] layer "Slider05.jpg": Duplicate path: Slider05.jpg
+[Tue Apr 19 2016 20:24:43 GMT-0500 (Hora est. Pacífico, Sudamérica)] layer "Slider06.jpg": Duplicate path: Slider06.jpg
+[Tue Apr 19 2016 20:24:43 GMT-0500 (Hora est. Pacífico, Sudamérica)] layer "Slider07.jpg": Duplicate path: Slider07.jpg
+[Tue Apr 19 2016 20:24:43 GMT-0500 (Hora est. Pacífico, Sudamérica)] layer "Slider08.jpg": Duplicate path: Slider08.jpg

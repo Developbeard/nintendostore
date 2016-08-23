@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>All Nintendo Store</title>
+<link rel="stylesheet" type="text/css" href="CSS/responsiveslides.css">
+<script src="JS/jquery-1.11.3.min.js"></script>
+<script type="text/livescript" src="JS/JCode2.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="JS/responsiveslides.min.js"></script>
+<script src="JS/JCode.js"></script>
+<link rel="stylesheet" type="text/css" href="CSS/estilos_home.css">
+</head>
+<body>
+<div id="contenedor">
+<header>
+<div id="dropMenu"><img src="IMG/web/menu icono.png" width="28" alt="Menu Icono"/></div>
+	<nav id="menuNavegador">
+    	<ul>
+        	<li><a href="index.html">Home</a></li>
+            <li><a href="Juegos.html">Juegos</a></li>
+            <li><a href="Consolas.html">Consolas</a></li>
+            <li><a href="Accesorios.html">Accesorios</a></li>
+            <li><a href="Contactos.html">Contactos</a></li>
+        </ul>
+    </nav>
+</header>
+	<div id="callbacks_container">
+            <ul class="rslides" id="slider2">
+                <li><img src="IMG/web/Slider01.jpg" width="100%" alt="Slider01"/></li>
+                <li><img src="IMG/web/Slider02.jpg" width="100%" alt="Slider02"/></li>
+                <li><img src="IMG/web/Slider03.jpg" width="100%" alt="Slider03"/></li>
+                <li><img src="IMG/web/Slider04.jpg" width="100%" alt="Slider04"/></li>
+                <li><img src="IMG/web/Slider05.jpg" width="100%" alt="Slider05"/></li>
+                <li><img src="IMG/web/Slider06.jpg" width="100%" alt="Slider06"/></li>
+                <li><img src="IMG/web/Slider07.jpg" width="100%" alt="Slider07"/></li>
+                <li><img src="IMG/web/Slider08.jpg" width="100%" alt="Slider07"/></li>
+            </ul>
+	</div>
+<div id="contenido">
+	<form id="buscador">  
+    	<label for="buscar" style="display:none">Buscar</label> 
+    	<input type="search" name="search" id="buscar" placeholder="Buscador">
+    </form>
+    <div id="Contactos">
+    	<div id="contactosTitulo">
+   			<h2>Contactos</h2>
+    	</div> 
+     <div id="contactosProducto"> 
+<form id="formulario" action="http://allnintendostore.esy.es/receptor2.php">
+        <ul class="listaFormulario">
+<li> <label for="txtNombre"> Nombre</label> <input type="text" name="txtNombre" id="txtNombre" class="cajaTXT" required></li>
+<li> <label for="txtEmail"> Email</label> <input type="email" name="txtEmail" id="txtEmail" class="cajaTXT" required>  </li>
+<li> <label for="txtTelf"> Teléfono</label> <input type="text" name="txtTelf" id="txtTelf" class="cajaTXT" required> </li>
+<li> <label for="txtMensaje"> Mensaje</label> <textarea type="text" name="txtMensaje" id="txtMensaje" class="cajaTXT" required></textarea> </li>
+</ul>
+<input type="submit" name="envio"  value="Enviar Ficha" class="botonSubmit">
+</form>
+<div id="imgContactos">
+	<img src="IMG/web/imagen.jpg" height="100%" alt="">
+</div>
+</div>
+<footer>
+	<ul>
+    	<li><img src="IMG/web/Facebook.png" width="100%" height="100%" alt="Facebook"/></li>
+        <li><img src="IMG/web/Twitter.png" width="100%" height="100%" alt="Twitter"/></li>
+    </ul>
+</footer>
+</div>
+</div>
+</div>
+</body>
+</html>
